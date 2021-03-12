@@ -1,3 +1,3 @@
-Repositorio Personal.
+<h1>Repositorio Personal.</h1>
 
-Creado para guardar proyectos que voy haciendo para aprender y otros.
+<h4>Repositorio creado para guardar proyectos que realizo, con la intención adicional de aprender Git.</h4>
