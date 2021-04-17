@@ -1,5 +1,7 @@
 import modulotelegram as bot
 
+token = "Your token here."
+
 if __name__ == "__main__":
-    myBot = bot.TeleBot("1348664736:AAHO9qQEuKZIHgNf4jWFglyl7EPFCajnYAc")
+    myBot = bot.TeleBot(token)
     myBot.StartBot()
