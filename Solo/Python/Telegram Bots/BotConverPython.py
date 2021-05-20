@@ -1,8 +1,11 @@
 from telegram import ReplyKeyboardMarkup
-from telegram.ext import Updater, MessageHandler, CommandHandler, ConversationHandler, Filters, CallbackContext
+from telegram.ext import Updater, MessageHandler, CommandHandler, ConversationHandler, Filters
 import pymysql as sql
 
-#Bot de Telegram interactivo mediante ConversationHandler con comandos basicos para una Base de Datos. (25/06/2020)
+# KEBERLEIN, Gian Franco - 25/06/2020
+# Ultimo editado: 17/05/2021, 02:39 AM
+
+#Bot de Telegram interactivo mediante ConversationHandler con comandos basicos para una Base de Datos de abogados.
 #   ConversationHandler tiene 3 'partes' que usar: entry_points, states, y fallback
 #   - entry_points: es una lista de Handlers que se chequean cada update para entrar a la conversacion.
 #   - states: es un dictionary con cada estado y los Handlers que avanzaran la conversacion.
@@ -11,14 +14,14 @@ import pymysql as sql
 #Hay varias partes del codigo que se tienen que cambiar si se quiere adaptar a otra base pero espero que sirva de guía.
 
 #Token id del bot
-botToken = "1348664736:AAHO9qQEuKZIHgNf4jWFglyl7EPFCajnYAc" #El token de tu bot
+botToken = "token"                          #El token de tu bot
 
 #Crear conexion con la DB
 conexion = sql.connect(
     host = "localhost",                     #Tu host
     user = "root",                          #Tu user
-    password = "G170902F",                  #Tu contraseña
-    db = "GABINETE_ABOGADOS"                #Tu DB
+    password = "password",                  #Tu contraseña
+    db = "database"                         #Tu DB
 )
 
 #Cursor (busca los datos en la db)
@@ -94,7 +97,7 @@ def convSelectDB(update, context):
 #SELECT total de la tabla
 def convSelectFetchall(update, context):
     dataList.insert(1, "*")
-    keyword = update.message.text
+    # keyword = update.message.text
 
     cmd = "SELECT "+ dataList[1] +" FROM "+ dataList[0] +";"
     cursor.execute(cmd)

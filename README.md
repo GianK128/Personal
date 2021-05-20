@@ -1,3 +1,5 @@
-<h1>Repositorio Personal.</h1>
+# Repositorio Personal
 
-<h4>Repositorio creado para guardar proyectos que realizo, con la intención adicional de aprender Git.</h4>
+## Introducción
+
+Hola, soy **Gian Franco Keberlein**, y este es el repositorio que utilizo para ir subiendo mis proyectos personales, y para ir aprendiendo a usar Git en el proceso.
