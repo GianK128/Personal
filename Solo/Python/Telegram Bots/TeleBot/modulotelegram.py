@@ -1,5 +1,7 @@
+# KEBERLEIN, Gian Franco - circa Sept. - Oct. 2020
+
 from telegram import ReplyKeyboardMarkup, Bot
-from telegram.ext import Updater, MessageHandler, CommandHandler, ConversationHandler, Filters, CallbackContext
+from telegram.ext import Updater, MessageHandler, CommandHandler, ConversationHandler, Filters
 import pruebamodulo as server   #Aca importar el archivo del server
 
 #/start - mensaje de bienvenida -
