@@ -6,7 +6,7 @@ if len(argv) != 2:
     exit(1)
 
 # Chequear que la clave otorgada no tenga caracteres repetidos y tenga 27 caracteres. Tambien que sean puras letras.
-if len(set(argv[1])) != 27 and argv[1].isalpha():
+if len(set(argv[1])) != 27 or not argv[1].isalpha():
     print("La clave no es valida. Debe tener 27 caracteres y no repetirse.")
     exit(1)
 
