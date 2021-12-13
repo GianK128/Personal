@@ -7,6 +7,7 @@
     <summary><a href="#python">Python</a></summary>
     <ul>
         <li><a href="#chat-con-sockets">Chat con Sockets (En progreso)</a></li>
+        <li><a href="#discord-bots">Discord Bots</a></li>
         <li><a href="#ejercicios-curso-itba">Ejercicios Curso ITBA (En progreso)</a></li>
         <li><a href="#practica-oniet-2021">Práctica ONIET 2021 (En progreso)</a></li>
         <li><a href="#telegram-bots">Telegram Bots</a></li>
@@ -27,6 +28,10 @@
 ### Chat con sockets
 
 - [Chat TCP/UDP entre clientes ](./Python/Chat%20Socket) (WIP).
+
+### Discord Bots
+
+- [Bot que busca imagenes usando la API de rule34... y también puede imprimir un video en fotogramas ASCII usando dos bots a la vez](Python\Discord%20Bots\NSFWBot) (no recomiendo usarlo porque se considera abuso de los bots, y puede resultar en un ban).
 
 ### Ejercicios Curso ITBA
 
