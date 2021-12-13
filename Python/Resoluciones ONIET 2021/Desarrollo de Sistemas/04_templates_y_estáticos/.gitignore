@@ -1,0 +1,4 @@
+templates_practice/db.sqlite3
+templates_practice/covid/__pycache__
+templates_practice/covid/migrations/__pycache__
+templates_practice/templates_practice/__pycache__

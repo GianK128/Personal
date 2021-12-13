@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+:root {
+    --bg-color: #151515;
+    --template-color: #252525;
+    --focus-text-color: #202020;
+    --text-color: #fff;
+    --lighter-main-color: #60e070;
+    --main-color: #45c550;
+    --darker-main-color: #35b540;
+    --second-color: #109010;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+input {
+    color: var(--text-color);
+    font-size: 1.05em;
+}
+label {
+    font-weight: bold;
+}
+.login-container {
+    width: 350px;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+.login-container a {
+    display: block;
+    margin-top: 15px;
+}
+.login-container__frame {
+    background-color: var(--template-color);
+    padding: 50px 30px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #000;
+}
+.login-container__frame h1 {
+    font-size: 2.5em;
+    padding: 0 0 30px 0;
+}
+.login-container__frame label {
+    padding: 5px 0;
+    float: left;
+}
+.login-container__frame input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--focus-text-color);
+    border: none;
+    border-bottom: 2px solid var(--darker-main-color);
+}
+.login-container__frame input:hover {
+    background-color: var(--bg-color);
+}
+.login-container__frame input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--lighter-main-color);
+    background-color: var(--bg-color);
+}
+.login-container__frame button {
+    width: 100%;
+    height: 36px;
+    margin: 15px 0 15px 0;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    box-shadow: 0 0 4px var(--main-color);
+    background-color: var(--darker-main-color);
+    border-bottom: 3px solid var(--second-color);
+}
+.login-container__frame button:hover {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 6px var(--main-color);
+    background-color: var(--main-color);
+    border-bottom: 3px solid var(--darker-main-color);
+}
+.login-container__frame a {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding-top: 10px;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+body {
+    color: #000;
+    background-color: deepskyblue;
+}
+.main-container {
+    text-align: center;
+    padding-top: 300px;
+}
+.main-container h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
